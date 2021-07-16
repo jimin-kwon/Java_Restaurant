@@ -73,9 +73,7 @@ public class MenuEx {
 					System.out.println("등록 실패");
 				}
 				break;
-				
-				
-				
+												
 //// 3.카탈로그 조회			
 			case 3:
 				List<Category> listCategory = dao.selectAllCategory();
@@ -163,6 +161,8 @@ public class MenuEx {
 
 }
 
+	
+	
 ####MenuDaoImPl
  package restaurant_project;
 
