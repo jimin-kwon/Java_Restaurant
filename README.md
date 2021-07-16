@@ -50,6 +50,7 @@ public class MenuEx {
 				}
 				break;
 
+	
 //// 2.메뉴 등록				
 			case 2:
 				System.out.println("등록할 메뉴 id 등록 하세요 ");
@@ -62,9 +63,8 @@ public class MenuEx {
 				int price = Integer.parseInt(sc.nextLine());
 				System.out.println("등록할 메뉴 카테로그 번호 등록하세요 ");
 				int category_id = Integer.parseInt(sc.nextLine());
-
+	
 				Menu me = new Menu(menu_id, mname, description, price, category_id);
-
 				int result = dao.insertMenu(me);
 				if (result > 0) {
 					System.out.println("등록 완료");
